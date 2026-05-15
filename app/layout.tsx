@@ -54,8 +54,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="es" className={`${inter.variable} ${playfair.variable}`}>
       <body className="grain font-sans antialiased">
         <Navigation />
-        <main>{children}</main>
-        <Footer />
+        <div className="md:pl-80">
+          <main className="min-h-screen">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

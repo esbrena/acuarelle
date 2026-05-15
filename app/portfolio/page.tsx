@@ -14,7 +14,7 @@ export default function PortfolioPage() {
   const categories = getCategories();
 
   return (
-    <section className="px-4 pb-24 pt-36 md:px-8 md:pt-44">
+    <section className="px-4 pb-24 pt-28 md:px-8 md:pt-10">
       <div className="mx-auto mb-12 max-w-7xl">
         <Reveal>
           <p className="mb-5 text-xs uppercase tracking-[0.4em] text-clay">Obras y prints</p>

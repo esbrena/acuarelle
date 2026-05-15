@@ -49,7 +49,7 @@ export default async function ArtworkDetailPage({ params }: PageProps) {
   const adjacent = getAdjacentArtworks(artwork.slug);
 
   return (
-    <section className="px-4 pb-24 pt-36 md:px-8 md:pt-44">
+    <section className="px-4 pb-24 pt-28 md:px-8 md:pt-10">
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
         <ArtworkGallery artwork={artwork} />
         <Reveal className="lg:sticky lg:top-32">

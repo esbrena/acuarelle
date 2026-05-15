@@ -48,7 +48,7 @@ export default async function CategoryPage({ params }: PageProps) {
   const categories = getCategories();
 
   return (
-    <section className="px-4 pb-24 pt-36 md:px-8 md:pt-44">
+    <section className="px-4 pb-24 pt-28 md:px-8 md:pt-10">
       <div className="mx-auto mb-12 grid max-w-7xl gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
         <Reveal>
           <Link href="/portfolio" className="mb-8 inline-block text-xs uppercase tracking-[0.32em] text-ash transition hover:text-clay">

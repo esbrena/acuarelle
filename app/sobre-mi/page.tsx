@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import { PersonalOffer } from "@/components/sections/PersonalOffer";
 import { Reveal } from "@/components/ui/Reveal";
 import { aboutContent, siteConfig } from "@/content/site";
 
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <section className="px-4 pb-24 pt-36 md:px-8 md:pt-44">
+    <section className="px-4 pb-24 pt-28 md:px-8 md:pt-10">
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
         <Reveal className="relative overflow-hidden rounded-[3rem] bg-night p-4 shadow-2xl shadow-ink/12 lg:sticky lg:top-32">
           <div className="relative h-[68vh] min-h-[34rem] overflow-hidden rounded-[2.4rem]">
@@ -66,6 +67,7 @@ export default function AboutPage() {
           </Reveal>
         </div>
       </div>
+      <PersonalOffer />
     </section>
   );
 }
