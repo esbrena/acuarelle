@@ -3,6 +3,8 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/content/site";
 import { getArtworks, getCategories } from "@/lib/content";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = ["", "/portfolio", "/sobre-mi", "/contacto"].map((route) => ({
     url: `${siteConfig.url}${route}`,

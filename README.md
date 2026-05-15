@@ -19,18 +19,18 @@ Portfolio premium para una artista/ilustradora, construido con Next.js, TypeScri
 3. Ejecuta:
 
 ```bash
-npm run content:build
+npm run ovh:zip
 ```
 
-4. Arranca o despliega la web:
+4. Sube a OVH el ZIP generado en:
 
-```bash
-npm run dev
-npm run build
-npm run start
+```text
+dist/acuarelle-ovh.zip
 ```
 
-En produccion, `npm run build` ejecuta automaticamente el parser del Excel antes de compilar Next.js.
+El comando `npm run ovh:zip` lee el Excel, genera la web estatica en `out/` y crea un ZIP listo para subir a la carpeta `www/` de OVH.
+
+Para instrucciones paso a paso sin conocimientos tecnicos, lee `GUIA-OVH.md`.
 
 ## Columnas del Excel
 
@@ -54,6 +54,12 @@ La primera hoja del Excel debe tener esta cabecera exacta:
 Si `imagenes` contiene solo un nombre de archivo, se resuelve como `/artworks/nombre.jpg`. Tambien se aceptan rutas absolutas (`/mi-carpeta/obra.jpg`) o URLs remotas.
 
 ## Scripts de contenido
+
+```bash
+npm run ovh:zip
+```
+
+Genera la web estatica compatible con hosting compartido OVH y crea `dist/acuarelle-ovh.zip`.
 
 ```bash
 npm run content:example
@@ -103,6 +109,7 @@ La web incluye:
 
 ## Notas de operacion
 
+- El proyecto esta configurado con `output: "export"` para generar una web estatica en `out/`, compatible con hostings compartidos como OVH.
 - Si una imagen indicada en el Excel no existe, el build no se rompe: se registra un aviso y la web muestra un fondo artistico de reserva.
 - Si hay slugs duplicados, el parser anade sufijos (`obra`, `obra-2`, `obra-3`).
 - Las categorias se generan automaticamente a partir de la columna `categorias`.

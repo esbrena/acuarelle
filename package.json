@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "npm run content:build && next build",
-    "start": "next start",
+    "ovh:zip": "npm run build && tsx scripts/create-ovh-zip.ts",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "content:build": "tsx scripts/build-content.ts",
@@ -39,6 +39,7 @@
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.4",
     "eslint-config-next": "^16.2.6",
+    "jszip": "^3.10.1",
     "tailwindcss": "^4.3.0",
     "tsx": "^4.22.0",
     "typescript": "^6.0.3"
