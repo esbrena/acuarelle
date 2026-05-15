@@ -64,6 +64,13 @@ export default async function ArtworkDetailPage({ params }: PageProps) {
             <AvailabilityBadge availability={artwork.availability} />
           </div>
 
+          <Link
+            href="/contacto"
+            className="mt-8 inline-flex rounded-full bg-ink px-6 py-4 text-xs uppercase tracking-[0.3em] text-porcelain transition hover:bg-clay"
+          >
+            Preguntar por esta pieza
+          </Link>
+
           <dl className="mt-10 grid gap-4 border-y border-ink/10 py-8">
             {[
               ["Tecnica", artwork.technique],

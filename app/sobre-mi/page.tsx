@@ -48,7 +48,7 @@ export default function AboutPage() {
               </ul>
             </Reveal>
             <Reveal delay={0.08} className="rounded-[2rem] border border-ink/10 bg-porcelain/64 p-7">
-              <h3 className="mb-5 text-xs uppercase tracking-[0.32em] text-clay">Archivo</h3>
+              <h3 className="mb-5 text-xs uppercase tracking-[0.32em] text-clay">Trabajo</h3>
               <ul className="space-y-4 text-ash">
                 {aboutContent.exhibitions.map((item) => (
                   <li key={item} className="border-t border-ink/10 pt-4">

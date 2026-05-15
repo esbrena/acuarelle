@@ -5,7 +5,7 @@ export const siteConfig = {
   artist: "Esther Garcia Brena",
   title: "Acuarelle - Acuarelas emocionales",
   description:
-    "Portfolio artistico de Esther Garcia Brena: acuarelas, ilustraciones por encargo y escenas emocionales llenas de magia.",
+    "Acuarelas e ilustraciones de Esther Garcia Brena: laminas personalizadas, prints y escenas emocionales llenas de magia.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.acuarelle.es",
   email: "acuarelle@gmail.com",
   imageBasePath: "/artworks",
@@ -13,10 +13,31 @@ export const siteConfig = {
   artistImage: "/artist/esther.jpg",
   logo: "/brand/logo_acuarelle.png",
   heroStatement:
-    "Acuarelas emocionales para convertir animales, recuerdos y paisajes interiores en escenas que respiran.",
+    "Hola, soy Esther. Pinto acuarelas personalizadas, retratos de animales y prints para llenar tu casa de pequenas historias.",
   editorialQuote:
-    "Cada obra nace como una pausa: agua, pigmento y una historia pequena que busca quedarse.",
+    "Cada lamina nace de una idea sencilla: un animal querido, una frase, un recuerdo o una escena que merece quedarse cerca.",
 };
+
+export const homeIntro = {
+  eyebrow: "Laminas personalizadas y prints",
+  title: "Acuarelas con alma para regalar, decorar y recordar.",
+  text: "Trabajo con encargos personalizados y pequenas colecciones de prints. Piezas suaves, narrativas y llenas de detalles para personas que quieren algo hecho con calma.",
+};
+
+export const offerCards = [
+  {
+    title: "Laminas personalizadas",
+    text: "Creo una pieza a partir de tu animal, tu historia o esa idea que quieres transformar en imagen.",
+  },
+  {
+    title: "Prints disponibles",
+    text: "Reproducciones cuidadas de obras seleccionadas, listas para enmarcar y vivir en casa.",
+  },
+  {
+    title: "Regalos con historia",
+    text: "Ilustraciones pensadas para cumpleanos, nacimientos, recuerdos familiares o detalles especiales.",
+  },
+];
 
 export const socialLinks: SocialLink[] = [
   {
@@ -41,27 +62,27 @@ export const aboutContent = {
   eyebrow: "Sobre mi",
   title: "Pintar una emocion hasta que encuentre su forma.",
   biography:
-    "Soy Esther, ilustradora, disenadora y artista apasionada por capturar emociones a traves de la acuarela. Mi trabajo se centra en crear escenas unicas y evocadoras que transforman simples ideas en momentos llenos de magia.",
+    "Soy Esther, ilustradora, disenadora y artista. Pinto animales, escenas cotidianas y pequenos universos en acuarela, siempre buscando esa mezcla de ternura, humor y emocion que convierte una imagen en recuerdo.",
   statement:
-    "Me especializo en acuarelas por encargo, donde cada obra comienza con un animal como protagonista. Desde un majestuoso leon hasta un delicado colibri, cada animal inspira una historia personalizada que refleja la esencia de quien la encarga.",
+    "Me gusta trabajar desde lo personal: una mascota, una casa, una frase, una aventura imaginada. A partir de ahi creo laminas personalizadas y prints que puedan acompanarte en el dia a dia.",
   trajectory: [
-    "Ilustracion emocional y retrato animal en acuarela.",
-    "Laminas listas para decorar espacios sensibles y contemporaneos.",
-    "Obra personalizada para regalos, proyectos editoriales y piezas familiares.",
+    "Acuarelas personalizadas con animales como protagonistas.",
+    "Prints y laminas listas para enmarcar.",
+    "Ilustracion para regalos, proyectos editoriales y piezas familiares.",
   ],
   exhibitions: [
-    "Archivo vivo de obras por encargo",
-    "Coleccion Acuarelle",
-    "Estudio Esther Garcia Brena",
+    "Encargos personalizados",
+    "Colecciones de prints",
+    "Estudio Acuarelle",
   ],
   philosophy:
-    "Trabajo con capas suaves, silencios visuales y pequenos gestos de color. La acuarela conserva el azar del agua y por eso cada pieza mantiene algo vivo.",
+    "Trabajo con capas suaves, silencios visuales y pequenos gestos de color. La acuarela conserva el azar del agua y por eso cada pieza mantiene algo vivo, imperfecto y cercano.",
 };
 
 export const contactContent = {
-  title: "Encargar una obra empieza con una conversacion tranquila.",
+  title: "Quieres una lamina personalizada o un print?",
   intro:
-    "Si te gusta mi trabajo y te gustaria contar conmigo para un proyecto especifico, encargar una ilustracion personalizada o simplemente saludar, escribeme y vemos juntas como convertir tu idea en una pieza especial.",
+    "Cuentame que imagen tienes en la cabeza: una mascota, una escena, un regalo, una frase o una idea pequena. Te respondere con calma para ver formato, tecnica y disponibilidad.",
   formNote:
-    "Formulario opcional preparado para conectar con tu proveedor favorito. Mientras tanto, el correo directo es la via principal.",
+    "Para encargos personalizados, escribe con una breve idea y, si tienes, alguna foto de referencia. Tambien puedes preguntar por prints disponibles.",
 };

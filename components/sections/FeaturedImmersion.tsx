@@ -15,11 +15,11 @@ export function FeaturedImmersion({ artworks }: { artworks: Artwork[] }) {
       <div className="mx-auto max-w-7xl">
         <Reveal className="mb-12 flex flex-col justify-between gap-5 md:flex-row md:items-end">
           <div>
-            <p className="mb-4 text-xs uppercase tracking-[0.4em] text-clay">Obras destacadas</p>
-            <h2 className="max-w-3xl font-serif text-5xl leading-[0.95] md:text-8xl">Un recorrido casi cinematografico.</h2>
+            <p className="mb-4 text-xs uppercase tracking-[0.4em] text-clay">Destacado</p>
+            <h2 className="max-w-3xl font-serif text-5xl leading-[0.95] md:text-8xl">Piezas para mirar despacio y llevar cerca.</h2>
           </div>
           <Link href="/portfolio" className="text-xs uppercase tracking-[0.32em] text-ash transition hover:text-ink">
-            Explorar todo
+            Ver todas
           </Link>
         </Reveal>
 
@@ -40,7 +40,7 @@ export function FeaturedImmersion({ artworks }: { artworks: Artwork[] }) {
                 <div className="absolute inset-0 bg-gradient-to-r from-night/80 via-night/18 to-transparent" />
                 <div className="absolute inset-0 flex items-end p-7 md:p-12">
                   <div className="max-w-2xl text-porcelain">
-                    <p className="mb-5 text-xs uppercase tracking-[0.38em] text-porcelain/56">0{index + 1} / destacada</p>
+                    <p className="mb-5 text-xs uppercase tracking-[0.38em] text-porcelain/56">0{index + 1} / acuarela</p>
                     <h3 className="font-serif text-6xl leading-none md:text-9xl">{artwork.title}</h3>
                     <p className="mt-6 max-w-xl text-lg leading-8 text-porcelain/72">{artwork.description}</p>
                   </div>

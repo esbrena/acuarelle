@@ -11,8 +11,8 @@ export function EditorialGrid({ artworks, categories }: { artworks: Artwork[]; c
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
           <Reveal className="sticky top-32">
-            <p className="mb-5 text-xs uppercase tracking-[0.4em] text-clay">Archivo vivo</p>
-            <h2 className="font-serif text-5xl leading-none md:text-7xl">El portfolio se compone como una revista visual.</h2>
+            <p className="mb-5 text-xs uppercase tracking-[0.4em] text-clay">Colecciones</p>
+            <h2 className="font-serif text-5xl leading-none md:text-7xl">Animales, pequenos viajes y escenas para casa.</h2>
             <p className="mt-7 max-w-md text-lg leading-8 text-ash">{siteConfig.editorialQuote}</p>
             <div className="mt-10 flex flex-wrap gap-3">
               {categories.slice(0, 7).map((category) => (

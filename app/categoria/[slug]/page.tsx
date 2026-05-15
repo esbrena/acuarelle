@@ -52,12 +52,12 @@ export default async function CategoryPage({ params }: PageProps) {
       <div className="mx-auto mb-12 grid max-w-7xl gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
         <Reveal>
           <Link href="/portfolio" className="mb-8 inline-block text-xs uppercase tracking-[0.32em] text-ash transition hover:text-clay">
-            Archivo completo
+            Ver todas las obras
           </Link>
-          <p className="mb-5 text-xs uppercase tracking-[0.4em] text-clay">Categoria</p>
+          <p className="mb-5 text-xs uppercase tracking-[0.4em] text-clay">Coleccion</p>
           <h1 className="font-serif text-7xl leading-[0.82] md:text-[10rem]">{category.name}</h1>
           <p className="mt-8 max-w-xl text-lg leading-8 text-ash">
-            {artworksInCategory.length} obras conectadas automaticamente por el Excel. Cambia las categorias en la hoja y esta pagina se regenera sola.
+            {artworksInCategory.length} piezas relacionadas con este tema. Acuarelas, laminas y prints para descubrir con calma.
           </p>
         </Reveal>
         <Reveal delay={0.12} className="relative h-[54vh] min-h-[24rem] overflow-hidden rounded-[2.8rem] bg-night">

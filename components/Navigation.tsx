@@ -12,9 +12,9 @@ import { cn } from "@/lib/utils";
 
 const navItems = [
   { href: "/", label: "Home" },
-  { href: "/portfolio", label: "Portfolio" },
+  { href: "/portfolio", label: "Obras" },
   { href: "/sobre-mi", label: "Sobre mi" },
-  { href: "/contacto", label: "Contacto" },
+  { href: "/contacto", label: "Encargos" },
 ];
 
 export function Navigation() {

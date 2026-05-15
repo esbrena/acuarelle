@@ -45,7 +45,7 @@ export default function ContactPage() {
       </div>
 
       <Reveal className="mx-auto mt-16 max-w-7xl rounded-[3rem] bg-night p-8 text-porcelain md:p-12">
-        <p className="mb-6 text-xs uppercase tracking-[0.4em] text-porcelain/50">Brief opcional</p>
+          <p className="mb-6 text-xs uppercase tracking-[0.4em] text-porcelain/50">Para empezar</p>
         <div className="grid gap-6 md:grid-cols-3">
           {["Que animal, recuerdo o paisaje quieres convertir en obra?", "Que formato imaginas para la pieza?", "Hay una fecha o intencion especial detras del encargo?"].map((question) => (
             <div key={question} className="rounded-[2rem] border border-porcelain/10 p-6 text-porcelain/72">

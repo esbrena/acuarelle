@@ -12,11 +12,11 @@ export function Footer() {
         <div>
           <p className="mb-4 text-xs uppercase tracking-[0.34em] text-porcelain/50">Acuarelle</p>
           <h2 className="max-w-xl font-serif text-5xl leading-none md:text-7xl">
-            Pintura lenta para mirar el mundo con mas ternura.
+            Acuarelas personalizadas y prints para llenar tu casa de historias.
           </h2>
         </div>
         <div>
-          <p className="mb-5 text-xs uppercase tracking-[0.34em] text-porcelain/50">Categorias</p>
+          <p className="mb-5 text-xs uppercase tracking-[0.34em] text-porcelain/50">Colecciones</p>
           <div className="flex flex-col gap-3">
             {categories.map((category) => (
               <Link key={category.slug} href={`/categoria/${category.slug}`} className="text-sm text-porcelain/72 transition hover:text-porcelain">
