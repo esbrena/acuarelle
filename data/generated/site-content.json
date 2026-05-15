@@ -1,0 +1,511 @@
+{
+  "generatedAt": "2026-05-15T08:00:40.609Z",
+  "sourceFile": "content/obras.xlsx",
+  "artworks": [
+    {
+      "id": "caminos-cruzados",
+      "slug": "caminos-cruzados",
+      "title": "Caminos Cruzados",
+      "categories": [
+        "acuarela",
+        "animal",
+        "narrativa"
+      ],
+      "categorySlugs": [
+        "acuarela",
+        "animal",
+        "narrativa"
+      ],
+      "description": "Una composicion ludica donde el movimiento del tablero se convierte en una pequena escena de encuentro y estrategia.",
+      "support": "Papel de algodon",
+      "technique": "Acuarela y tinta",
+      "size": "30 x 40 cm",
+      "availability": {
+        "original": true,
+        "print": true
+      },
+      "images": [
+        "/artworks/ajedrez.png"
+      ],
+      "missingImages": [],
+      "featured": true,
+      "year": "2026"
+    },
+    {
+      "id": "mar-de-ilusiones",
+      "slug": "mar-de-ilusiones",
+      "title": "Mar de Ilusiones",
+      "categories": [
+        "acuarela",
+        "polar",
+        "paisaje"
+      ],
+      "categorySlugs": [
+        "acuarela",
+        "polar",
+        "paisaje"
+      ],
+      "description": "Una pieza silenciosa de atmosfera fria, pensada como un refugio visual entre hielo, agua y luz.",
+      "support": "Papel grano fino",
+      "technique": "Acuarela",
+      "size": "40 x 50 cm",
+      "availability": {
+        "original": false,
+        "print": true
+      },
+      "images": [
+        "/artworks/oso-polar.png"
+      ],
+      "missingImages": [],
+      "featured": true,
+      "year": "2025"
+    },
+    {
+      "id": "bajo-las-estrellas",
+      "slug": "bajo-las-estrellas",
+      "title": "Bajo las Estrellas",
+      "categories": [
+        "acuarela",
+        "animal",
+        "nocturno"
+      ],
+      "categorySlugs": [
+        "acuarela",
+        "animal",
+        "nocturno"
+      ],
+      "description": "Un leon contemplativo bajo un cielo profundo; fuerza, calma y misterio en una misma respiracion.",
+      "support": "Papel de algodon",
+      "technique": "Acuarela con gouache",
+      "size": "30 x 40 cm",
+      "availability": {
+        "original": true,
+        "print": true
+      },
+      "images": [
+        "/artworks/leon.png"
+      ],
+      "missingImages": [],
+      "featured": true,
+      "year": "2025"
+    },
+    {
+      "id": "aventura-cosmica",
+      "slug": "aventura-cosmica",
+      "title": "Aventura Cosmica",
+      "categories": [
+        "ilustracion",
+        "animal",
+        "infantil"
+      ],
+      "categorySlugs": [
+        "ilustracion",
+        "animal",
+        "infantil"
+      ],
+      "description": "Una oveja viajera suspendida en un universo suave, creada para provocar ternura y asombro.",
+      "support": "Papel prensado en frio",
+      "technique": "Acuarela",
+      "size": "24 x 32 cm",
+      "availability": {
+        "original": true,
+        "print": true
+      },
+      "images": [
+        "/artworks/oveja.png"
+      ],
+      "missingImages": [],
+      "featured": false,
+      "year": "2024"
+    },
+    {
+      "id": "aventuras-sobre-ruedas",
+      "slug": "aventuras-sobre-ruedas",
+      "title": "Aventuras sobre Ruedas",
+      "categories": [
+        "ilustracion",
+        "animal",
+        "editorial"
+      ],
+      "categorySlugs": [
+        "ilustracion",
+        "animal",
+        "editorial"
+      ],
+      "description": "Energia, juego y movimiento para una escena con espiritu de cuento contemporaneo.",
+      "support": "Papel de algodon",
+      "technique": "Acuarela y lapiz",
+      "size": "30 x 30 cm",
+      "availability": {
+        "original": false,
+        "print": true
+      },
+      "images": [
+        "/artworks/conejo.png"
+      ],
+      "missingImages": [],
+      "featured": false,
+      "year": "2024"
+    },
+    {
+      "id": "sabores-orientales",
+      "slug": "sabores-orientales",
+      "title": "Sabores Orientales",
+      "categories": [
+        "acuarela",
+        "animal",
+        "cocina"
+      ],
+      "categorySlugs": [
+        "acuarela",
+        "animal",
+        "cocina"
+      ],
+      "description": "Un panda en una composicion de aroma editorial, delicada y amable.",
+      "support": "Papel grano satinado",
+      "technique": "Acuarela",
+      "size": "21 x 30 cm",
+      "availability": {
+        "original": true,
+        "print": true
+      },
+      "images": [
+        "/artworks/panda.png"
+      ],
+      "missingImages": [],
+      "featured": false,
+      "year": "2024"
+    },
+    {
+      "id": "luz-de-luna",
+      "slug": "luz-de-luna",
+      "title": "Luz de Luna",
+      "categories": [
+        "acuarela",
+        "animal",
+        "nocturno"
+      ],
+      "categorySlugs": [
+        "acuarela",
+        "animal",
+        "nocturno"
+      ],
+      "description": "Un gato atravesado por una luz quieta; una imagen intima para mirar despacio.",
+      "support": "Papel de algodon",
+      "technique": "Acuarela",
+      "size": "30 x 40 cm",
+      "availability": {
+        "original": true,
+        "print": true
+      },
+      "images": [
+        "/artworks/gato.png"
+      ],
+      "missingImages": [],
+      "featured": true,
+      "year": "2026"
+    },
+    {
+      "id": "surcando-los-cielos",
+      "slug": "surcando-los-cielos",
+      "title": "Surcando los Cielos",
+      "categories": [
+        "acuarela",
+        "animal",
+        "viaje"
+      ],
+      "categorySlugs": [
+        "acuarela",
+        "animal",
+        "viaje"
+      ],
+      "description": "Una escena de zorro y aire, con lectura cinematografica y una paleta luminosa.",
+      "support": "Papel grano fino",
+      "technique": "Acuarela y tinta",
+      "size": "40 x 50 cm",
+      "availability": {
+        "original": false,
+        "print": true
+      },
+      "images": [
+        "/artworks/zorro.png"
+      ],
+      "missingImages": [],
+      "featured": false,
+      "year": "2025"
+    },
+    {
+      "id": "rugiendo-en-la-carretera",
+      "slug": "rugiendo-en-la-carretera",
+      "title": "Rugiendo en la Carretera",
+      "categories": [
+        "ilustracion",
+        "animal",
+        "aventura"
+      ],
+      "categorySlugs": [
+        "ilustracion",
+        "animal",
+        "aventura"
+      ],
+      "description": "Una pieza de caracter jugueton con composicion dinamica y sentido de travesia.",
+      "support": "Papel prensado en frio",
+      "technique": "Acuarela",
+      "size": "30 x 40 cm",
+      "availability": {
+        "original": true,
+        "print": true
+      },
+      "images": [
+        "/artworks/cocodrilo.png"
+      ],
+      "missingImages": [],
+      "featured": false,
+      "year": "2024"
+    }
+  ],
+  "featuredArtworks": [
+    {
+      "id": "caminos-cruzados",
+      "slug": "caminos-cruzados",
+      "title": "Caminos Cruzados",
+      "categories": [
+        "acuarela",
+        "animal",
+        "narrativa"
+      ],
+      "categorySlugs": [
+        "acuarela",
+        "animal",
+        "narrativa"
+      ],
+      "description": "Una composicion ludica donde el movimiento del tablero se convierte en una pequena escena de encuentro y estrategia.",
+      "support": "Papel de algodon",
+      "technique": "Acuarela y tinta",
+      "size": "30 x 40 cm",
+      "availability": {
+        "original": true,
+        "print": true
+      },
+      "images": [
+        "/artworks/ajedrez.png"
+      ],
+      "missingImages": [],
+      "featured": true,
+      "year": "2026"
+    },
+    {
+      "id": "mar-de-ilusiones",
+      "slug": "mar-de-ilusiones",
+      "title": "Mar de Ilusiones",
+      "categories": [
+        "acuarela",
+        "polar",
+        "paisaje"
+      ],
+      "categorySlugs": [
+        "acuarela",
+        "polar",
+        "paisaje"
+      ],
+      "description": "Una pieza silenciosa de atmosfera fria, pensada como un refugio visual entre hielo, agua y luz.",
+      "support": "Papel grano fino",
+      "technique": "Acuarela",
+      "size": "40 x 50 cm",
+      "availability": {
+        "original": false,
+        "print": true
+      },
+      "images": [
+        "/artworks/oso-polar.png"
+      ],
+      "missingImages": [],
+      "featured": true,
+      "year": "2025"
+    },
+    {
+      "id": "bajo-las-estrellas",
+      "slug": "bajo-las-estrellas",
+      "title": "Bajo las Estrellas",
+      "categories": [
+        "acuarela",
+        "animal",
+        "nocturno"
+      ],
+      "categorySlugs": [
+        "acuarela",
+        "animal",
+        "nocturno"
+      ],
+      "description": "Un leon contemplativo bajo un cielo profundo; fuerza, calma y misterio en una misma respiracion.",
+      "support": "Papel de algodon",
+      "technique": "Acuarela con gouache",
+      "size": "30 x 40 cm",
+      "availability": {
+        "original": true,
+        "print": true
+      },
+      "images": [
+        "/artworks/leon.png"
+      ],
+      "missingImages": [],
+      "featured": true,
+      "year": "2025"
+    },
+    {
+      "id": "luz-de-luna",
+      "slug": "luz-de-luna",
+      "title": "Luz de Luna",
+      "categories": [
+        "acuarela",
+        "animal",
+        "nocturno"
+      ],
+      "categorySlugs": [
+        "acuarela",
+        "animal",
+        "nocturno"
+      ],
+      "description": "Un gato atravesado por una luz quieta; una imagen intima para mirar despacio.",
+      "support": "Papel de algodon",
+      "technique": "Acuarela",
+      "size": "30 x 40 cm",
+      "availability": {
+        "original": true,
+        "print": true
+      },
+      "images": [
+        "/artworks/gato.png"
+      ],
+      "missingImages": [],
+      "featured": true,
+      "year": "2026"
+    }
+  ],
+  "categories": [
+    {
+      "name": "acuarela",
+      "slug": "acuarela",
+      "count": 6,
+      "featuredImage": "/artworks/ajedrez.png",
+      "artworkSlugs": [
+        "caminos-cruzados",
+        "mar-de-ilusiones",
+        "bajo-las-estrellas",
+        "sabores-orientales",
+        "luz-de-luna",
+        "surcando-los-cielos"
+      ]
+    },
+    {
+      "name": "animal",
+      "slug": "animal",
+      "count": 8,
+      "featuredImage": "/artworks/ajedrez.png",
+      "artworkSlugs": [
+        "caminos-cruzados",
+        "bajo-las-estrellas",
+        "aventura-cosmica",
+        "aventuras-sobre-ruedas",
+        "sabores-orientales",
+        "luz-de-luna",
+        "surcando-los-cielos",
+        "rugiendo-en-la-carretera"
+      ]
+    },
+    {
+      "name": "aventura",
+      "slug": "aventura",
+      "count": 1,
+      "featuredImage": "/artworks/cocodrilo.png",
+      "artworkSlugs": [
+        "rugiendo-en-la-carretera"
+      ]
+    },
+    {
+      "name": "cocina",
+      "slug": "cocina",
+      "count": 1,
+      "featuredImage": "/artworks/panda.png",
+      "artworkSlugs": [
+        "sabores-orientales"
+      ]
+    },
+    {
+      "name": "editorial",
+      "slug": "editorial",
+      "count": 1,
+      "featuredImage": "/artworks/conejo.png",
+      "artworkSlugs": [
+        "aventuras-sobre-ruedas"
+      ]
+    },
+    {
+      "name": "ilustracion",
+      "slug": "ilustracion",
+      "count": 3,
+      "featuredImage": "/artworks/oveja.png",
+      "artworkSlugs": [
+        "aventura-cosmica",
+        "aventuras-sobre-ruedas",
+        "rugiendo-en-la-carretera"
+      ]
+    },
+    {
+      "name": "infantil",
+      "slug": "infantil",
+      "count": 1,
+      "featuredImage": "/artworks/oveja.png",
+      "artworkSlugs": [
+        "aventura-cosmica"
+      ]
+    },
+    {
+      "name": "narrativa",
+      "slug": "narrativa",
+      "count": 1,
+      "featuredImage": "/artworks/ajedrez.png",
+      "artworkSlugs": [
+        "caminos-cruzados"
+      ]
+    },
+    {
+      "name": "nocturno",
+      "slug": "nocturno",
+      "count": 2,
+      "featuredImage": "/artworks/leon.png",
+      "artworkSlugs": [
+        "bajo-las-estrellas",
+        "luz-de-luna"
+      ]
+    },
+    {
+      "name": "paisaje",
+      "slug": "paisaje",
+      "count": 1,
+      "featuredImage": "/artworks/oso-polar.png",
+      "artworkSlugs": [
+        "mar-de-ilusiones"
+      ]
+    },
+    {
+      "name": "polar",
+      "slug": "polar",
+      "count": 1,
+      "featuredImage": "/artworks/oso-polar.png",
+      "artworkSlugs": [
+        "mar-de-ilusiones"
+      ]
+    },
+    {
+      "name": "viaje",
+      "slug": "viaje",
+      "count": 1,
+      "featuredImage": "/artworks/zorro.png",
+      "artworkSlugs": [
+        "surcando-los-cielos"
+      ]
+    }
+  ],
+  "warnings": []
+}
