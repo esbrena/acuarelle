@@ -1,0 +1,72 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+
+import { PortfolioExperience } from "@/components/PortfolioExperience";
+import { ArtworkImage } from "@/components/ui/ArtworkImage";
+import { Reveal } from "@/components/ui/Reveal";
+import { getArtworks, getArtworksByCategory, getCategories, getCategoryBySlug } from "@/lib/content";
+
+type PageProps = {
+  params: Promise<{ slug: string }>;
+};
+
+export function generateStaticParams() {
+  return getCategories().map((category) => ({
+    slug: category.slug,
+  }));
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const category = getCategoryBySlug(slug);
+
+  if (!category) {
+    return {};
+  }
+
+  return {
+    title: `Categoria ${category.name}`,
+    description: `Obras de la categoría ${category.name} en Acuarelle.`,
+    openGraph: {
+      title: `Categoria ${category.name}`,
+      images: category.featuredImage ? [category.featuredImage] : undefined,
+    },
+  };
+}
+
+export default async function CategoryPage({ params }: PageProps) {
+  const { slug } = await params;
+  const category = getCategoryBySlug(slug);
+
+  if (!category) {
+    notFound();
+  }
+
+  const artworksInCategory = getArtworksByCategory(category.slug);
+  const artworks = getArtworks();
+  const categories = getCategories();
+
+  return (
+    <section className="px-4 pb-24 pt-28 md:px-8 md:pt-10">
+      <div className="mx-auto mb-12 grid max-w-7xl gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
+        <Reveal>
+          <Link href="/portfolio" className="mb-8 inline-block text-xs uppercase tracking-[0.32em] text-ash transition hover:text-blueberry">
+            Ver todas las obras
+          </Link>
+          <p className="mb-5 text-xs uppercase tracking-[0.4em] text-blueberry">Colección</p>
+          <h1 className="font-serif text-5xl leading-[0.92] sm:text-6xl lg:text-8xl">{category.name}</h1>
+          <p className="mt-8 max-w-xl text-lg leading-8 text-ash">
+            {artworksInCategory.length} piezas relacionadas con este tema. Acuarelas, láminas y prints para descubrir con calma.
+          </p>
+        </Reveal>
+        <Reveal delay={0.12} className="relative h-[54vh] min-h-[24rem] overflow-hidden rounded-[2.8rem] bg-night">
+          <ArtworkImage src={category.featuredImage} title={category.name} priority />
+          <div className="absolute inset-0 bg-gradient-to-t from-night/55 to-transparent" />
+        </Reveal>
+      </div>
+
+      <PortfolioExperience artworks={artworks} categories={categories} initialCategory={category.slug} />
+    </section>
+  );
+}

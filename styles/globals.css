@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+  --color-ink: #211915;
+  --color-ash: #756b62;
+  --color-paper: #f7f1e8;
+  --color-porcelain: #fffaf3;
+  --color-clay: #b56d4f;
+  --color-mist: #d7e6e7;
+  --color-night: #14110f;
+  --color-blueberry: #3c55c5;
+  --color-butter: #f8dc7c;
+  --color-blush: #f5b7c6;
+  --color-sky-soft: #b9dff0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #f7f1e8;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(185, 223, 240, 0.55), transparent 28rem),
+    radial-gradient(circle at 86% 18%, rgba(245, 183, 198, 0.32), transparent 24rem),
+    radial-gradient(circle at 65% 86%, rgba(248, 220, 124, 0.26), transparent 22rem),
+    linear-gradient(135deg, #fffaf3 0%, #f7f1e8 48%, #f6e7d8 100%);
+  color: #211915;
+}
+
+::selection {
+  background: rgba(60, 85, 197, 0.22);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.grain::before {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  content: "";
+  opacity: 0.12;
+  mix-blend-mode: multiply;
+  background-image:
+    linear-gradient(115deg, rgba(255, 255, 255, 0.28), transparent 42%),
+    repeating-radial-gradient(circle at 0 0, rgba(33, 25, 21, 0.14) 0, rgba(33, 25, 21, 0.14) 1px, transparent 1px, transparent 6px);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.masonry {
+  column-gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1180px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+
+.focus-ring {
+  outline: 2px solid transparent;
+  outline-offset: 4px;
+}
+
+.focus-ring:focus-visible {
+  outline-color: rgba(60, 85, 197, 0.75);
+}
+
+.glass-panel {
+  border: 1px solid rgba(255, 250, 243, 0.48);
+  background: rgba(255, 250, 243, 0.68);
+  box-shadow: 0 24px 80px rgba(33, 25, 21, 0.08);
+  backdrop-filter: blur(24px);
+}
