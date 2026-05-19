@@ -53,11 +53,11 @@ export default async function ArtworkDetailPage({ params }: PageProps) {
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
         <ArtworkGallery artwork={artwork} />
         <Reveal className="lg:sticky lg:top-32">
-          <Link href="/portfolio" className="mb-8 inline-block text-xs uppercase tracking-[0.32em] text-ash transition hover:text-clay">
+          <Link href="/portfolio" className="mb-8 inline-block text-xs uppercase tracking-[0.32em] text-ash transition hover:text-blueberry">
             Volver al portfolio
           </Link>
-          <p className="mb-5 text-xs uppercase tracking-[0.4em] text-clay">{artwork.categories.join(" / ")}</p>
-          <h1 className="font-serif text-6xl leading-none md:text-9xl">{artwork.title}</h1>
+          <p className="mb-5 text-xs uppercase tracking-[0.4em] text-blueberry">{artwork.categories.join(" / ")}</p>
+          <h1 className="font-serif text-5xl leading-none sm:text-6xl lg:text-8xl">{artwork.title}</h1>
           <p className="mt-7 text-lg leading-8 text-ash">{artwork.description}</p>
 
           <div className="mt-8">
@@ -66,7 +66,7 @@ export default async function ArtworkDetailPage({ params }: PageProps) {
 
           <Link
             href="/contacto"
-            className="mt-8 inline-flex rounded-full bg-ink px-6 py-4 text-xs uppercase tracking-[0.3em] text-porcelain transition hover:bg-clay"
+            className="mt-8 inline-flex rounded-full bg-blueberry px-6 py-4 text-xs uppercase tracking-[0.3em] text-porcelain transition hover:-translate-y-0.5 hover:bg-blueberry/90"
           >
             Preguntar por esta pieza
           </Link>
@@ -92,7 +92,7 @@ export default async function ArtworkDetailPage({ params }: PageProps) {
               <Link
                 key={category}
                 href={`/categoria/${artwork.categorySlugs[index]}`}
-                className="rounded-full border border-ink/10 bg-porcelain/60 px-4 py-2 text-xs uppercase tracking-[0.22em] text-ash transition hover:border-clay hover:text-clay"
+                className="rounded-full border border-blueberry/10 bg-porcelain/60 px-4 py-2 text-xs uppercase tracking-[0.22em] text-ash transition hover:border-blueberry hover:text-blueberry"
               >
                 {category}
               </Link>

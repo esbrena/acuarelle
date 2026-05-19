@@ -15,7 +15,7 @@ export function FeaturedImmersion({ artworks }: { artworks: Artwork[] }) {
       <div className="mx-auto max-w-7xl">
         <Reveal className="mb-12 flex flex-col justify-between gap-5 md:flex-row md:items-end">
           <div>
-            <p className="mb-4 text-xs uppercase tracking-[0.4em] text-clay">Destacado</p>
+            <p className="mb-4 text-xs uppercase tracking-[0.4em] text-blueberry">Destacado</p>
             <h2 className="max-w-3xl font-serif text-5xl leading-[0.95] md:text-8xl">Piezas para mirar despacio y llevar cerca.</h2>
           </div>
           <Link href="/portfolio" className="text-xs uppercase tracking-[0.32em] text-ash transition hover:text-ink">

@@ -9,8 +9,8 @@ export function CategoryMarquee({ categories }: { categories: Category[] }) {
     <section className="px-4 py-20 md:px-8">
       <div className="mx-auto max-w-7xl">
         <Reveal className="mb-10">
-          <p className="mb-4 text-xs uppercase tracking-[0.4em] text-clay">Explorar por temas</p>
-          <h2 className="max-w-4xl font-serif text-5xl leading-none md:text-8xl">Encuentra una pieza por tecnica, animal o atmosfera.</h2>
+          <p className="mb-4 text-xs uppercase tracking-[0.4em] text-blueberry">Explorar por temas</p>
+          <h2 className="max-w-4xl font-serif text-5xl leading-none md:text-8xl">Encuentra una pieza por técnica, animal o atmósfera.</h2>
         </Reveal>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {categories.slice(0, 8).map((category, index) => (

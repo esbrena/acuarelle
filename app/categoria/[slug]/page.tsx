@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: `Categoria ${category.name}`,
-    description: `Obras de la categoria ${category.name} en Acuarelle.`,
+    description: `Obras de la categoría ${category.name} en Acuarelle.`,
     openGraph: {
       title: `Categoria ${category.name}`,
       images: category.featuredImage ? [category.featuredImage] : undefined,
@@ -51,13 +51,13 @@ export default async function CategoryPage({ params }: PageProps) {
     <section className="px-4 pb-24 pt-28 md:px-8 md:pt-10">
       <div className="mx-auto mb-12 grid max-w-7xl gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
         <Reveal>
-          <Link href="/portfolio" className="mb-8 inline-block text-xs uppercase tracking-[0.32em] text-ash transition hover:text-clay">
+          <Link href="/portfolio" className="mb-8 inline-block text-xs uppercase tracking-[0.32em] text-ash transition hover:text-blueberry">
             Ver todas las obras
           </Link>
-          <p className="mb-5 text-xs uppercase tracking-[0.4em] text-clay">Coleccion</p>
-          <h1 className="font-serif text-7xl leading-[0.82] md:text-[10rem]">{category.name}</h1>
+          <p className="mb-5 text-xs uppercase tracking-[0.4em] text-blueberry">Colección</p>
+          <h1 className="font-serif text-5xl leading-[0.92] sm:text-6xl lg:text-8xl">{category.name}</h1>
           <p className="mt-8 max-w-xl text-lg leading-8 text-ash">
-            {artworksInCategory.length} piezas relacionadas con este tema. Acuarelas, laminas y prints para descubrir con calma.
+            {artworksInCategory.length} piezas relacionadas con este tema. Acuarelas, láminas y prints para descubrir con calma.
           </p>
         </Reveal>
         <Reveal delay={0.12} className="relative h-[54vh] min-h-[24rem] overflow-hidden rounded-[2.8rem] bg-night">

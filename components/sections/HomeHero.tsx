@@ -19,7 +19,7 @@ export function HomeHero({ artworksCount, heroArtwork }: { artworksCount: number
       <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
         <div className="z-10">
           <Reveal>
-            <p className="mb-6 text-xs uppercase tracking-[0.44em] text-clay">Acuarelas de Esther Garcia Brena</p>
+            <p className="mb-6 text-xs uppercase tracking-[0.44em] text-blueberry">Acuarelas de Esther García Brena</p>
             <h1 className="text-balance font-serif text-[clamp(4.4rem,13vw,13rem)] leading-[0.78] tracking-[-0.08em]">
               Prints,
               <br />
@@ -33,15 +33,15 @@ export function HomeHero({ artworksCount, heroArtwork }: { artworksCount: number
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link
                 href="/portfolio"
-                className="focus-ring rounded-full bg-ink px-6 py-4 text-xs uppercase tracking-[0.3em] text-porcelain transition hover:-translate-y-0.5 hover:bg-clay"
+                className="focus-ring rounded-full bg-blueberry px-6 py-4 text-xs uppercase tracking-[0.3em] text-porcelain transition hover:-translate-y-0.5 hover:bg-blueberry/90"
               >
                 Ver obras
               </Link>
               <Link
                 href="/contacto"
-                className="focus-ring rounded-full border border-ink/15 px-6 py-4 text-xs uppercase tracking-[0.3em] text-ink transition hover:border-clay hover:text-clay"
+                className="focus-ring rounded-full border border-blueberry/15 px-6 py-4 text-xs uppercase tracking-[0.3em] text-ink transition hover:border-blueberry hover:text-blueberry"
               >
-                Encargar lamina
+                Encargar lámina
               </Link>
             </div>
           </Reveal>
@@ -58,7 +58,7 @@ export function HomeHero({ artworksCount, heroArtwork }: { artworksCount: number
           <div className="absolute inset-0 bg-gradient-to-t from-night/70 via-transparent to-porcelain/10" />
           <div className="absolute bottom-0 left-0 right-0 p-6 text-porcelain md:p-9">
             <p className="mb-3 text-xs uppercase tracking-[0.38em] text-porcelain/58">
-              {artworksCount.toString().padStart(2, "0")} laminas y acuarelas
+              {artworksCount.toString().padStart(2, "0")} láminas y acuarelas
             </p>
             <h2 className="font-serif text-4xl italic md:text-6xl">{heroArtwork?.title ?? "Obra viva"}</h2>
           </div>

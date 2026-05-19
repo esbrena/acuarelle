@@ -217,10 +217,8 @@ async function main() {
     });
   });
 
-  const sourceStats = await fs.stat(SOURCE_FILE);
-
   const content: PortfolioContent = {
-    generatedAt: sourceStats.mtime.toISOString(),
+    generatedAt: (workbook.modified ?? workbook.created ?? new Date("2026-01-01T00:00:00.000Z")).toISOString(),
     sourceFile: siteConfig.excelPath,
     artworks,
     featuredArtworks: artworks.filter((artwork) => artwork.featured),

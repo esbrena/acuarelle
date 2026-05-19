@@ -3,7 +3,7 @@
 import { Search } from "lucide-react";
 import { useMemo, useState } from "react";
 
-import { ArtworkCard } from "@/components/ui/ArtworkCard";
+import { ArtworkSquareCard } from "@/components/ui/ArtworkSquareCard";
 import type { Artwork, Category } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
@@ -31,14 +31,14 @@ export function PortfolioExperience({ artworks, categories, initialCategory = "t
 
   return (
     <div>
-      <div className="glass-panel sticky top-24 z-30 mx-auto mb-10 flex max-w-7xl flex-col gap-4 rounded-[2rem] p-4 md:flex-row md:items-center md:justify-between">
+      <div className="glass-panel sticky top-24 z-30 mx-auto mb-8 flex max-w-7xl flex-col gap-4 rounded-[18px] p-3 md:top-4 md:flex-row md:items-center md:justify-between">
         <div className="flex gap-2 overflow-x-auto pb-1">
           <button
             type="button"
             onClick={() => setActiveCategory("todo")}
             className={cn(
               "focus-ring shrink-0 rounded-full px-4 py-3 text-xs uppercase tracking-[0.24em] transition",
-              activeCategory === "todo" ? "bg-ink text-porcelain" : "bg-porcelain/60 text-ash hover:text-ink",
+              activeCategory === "todo" ? "bg-blueberry text-porcelain" : "bg-porcelain/70 text-ash hover:text-blueberry",
             )}
           >
             Todo
@@ -50,7 +50,7 @@ export function PortfolioExperience({ artworks, categories, initialCategory = "t
               onClick={() => setActiveCategory(category.slug)}
               className={cn(
                 "focus-ring shrink-0 rounded-full px-4 py-3 text-xs uppercase tracking-[0.24em] transition",
-                activeCategory === category.slug ? "bg-ink text-porcelain" : "bg-porcelain/60 text-ash hover:text-ink",
+                activeCategory === category.slug ? "bg-blueberry text-porcelain" : "bg-porcelain/70 text-ash hover:text-blueberry",
               )}
             >
               {category.name}
@@ -63,7 +63,7 @@ export function PortfolioExperience({ artworks, categories, initialCategory = "t
           <input
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Buscar obra, tecnica, soporte..."
+            placeholder="Buscar obra, técnica, soporte..."
             className="focus-ring w-full rounded-full border border-ink/10 bg-porcelain/80 py-3 pl-11 pr-4 text-sm text-ink placeholder:text-ash/70"
           />
         </label>
@@ -74,15 +74,15 @@ export function PortfolioExperience({ artworks, categories, initialCategory = "t
           {filteredArtworks.length} obras encontradas
         </p>
         {filteredArtworks.length > 0 ? (
-          <div className="masonry">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:gap-4 xl:grid-cols-4 2xl:grid-cols-5">
             {filteredArtworks.map((artwork, index) => (
-              <ArtworkCard key={artwork.slug} artwork={artwork} index={index} />
+              <ArtworkSquareCard key={artwork.slug} artwork={artwork} priority={index < 8} />
             ))}
           </div>
         ) : (
           <div className="rounded-[2rem] border border-ink/10 bg-porcelain/60 p-12 text-center">
-            <p className="font-serif text-4xl">No hay obras con esa busqueda.</p>
-            <p className="mt-3 text-ash">Prueba con otra categoria o una palabra mas amplia.</p>
+            <p className="font-serif text-4xl">No hay obras con esa búsqueda.</p>
+            <p className="mt-3 text-ash">Prueba con otra categoría o una palabra más amplia.</p>
           </div>
         )}
       </div>

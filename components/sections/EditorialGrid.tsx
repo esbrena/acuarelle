@@ -11,15 +11,15 @@ export function EditorialGrid({ artworks, categories }: { artworks: Artwork[]; c
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
           <Reveal className="sticky top-32">
-            <p className="mb-5 text-xs uppercase tracking-[0.4em] text-clay">Colecciones</p>
-            <h2 className="font-serif text-5xl leading-none md:text-7xl">Animales, pequenos viajes y escenas para casa.</h2>
+            <p className="mb-5 text-xs uppercase tracking-[0.4em] text-blueberry">Colecciones</p>
+            <h2 className="font-serif text-5xl leading-none md:text-7xl">Animales, pequeños viajes y escenas para casa.</h2>
             <p className="mt-7 max-w-md text-lg leading-8 text-ash">{siteConfig.editorialQuote}</p>
             <div className="mt-10 flex flex-wrap gap-3">
               {categories.slice(0, 7).map((category) => (
                 <Link
                   key={category.slug}
                   href={`/categoria/${category.slug}`}
-                  className="rounded-full border border-ink/10 bg-porcelain/54 px-4 py-2 text-xs uppercase tracking-[0.22em] text-ash transition hover:border-clay hover:text-clay"
+                  className="rounded-full border border-blueberry/10 bg-porcelain/54 px-4 py-2 text-xs uppercase tracking-[0.22em] text-ash transition hover:border-blueberry hover:text-blueberry"
                 >
                   {category.name}
                 </Link>
